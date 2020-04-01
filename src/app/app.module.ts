@@ -3,14 +3,34 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HeaderComponent } from './components/header/header.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { ButtonComponent } from './common-components/button/button.component';
+import { LogoComponent } from './common-components/logo/logo.component';
+import { MainComponent } from './pages/main/main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SideBarComponent,
+    ButtonComponent,
+    LogoComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonToggleModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

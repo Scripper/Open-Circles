@@ -1,0 +1,28 @@
+/* COLORS */
+
+$darkorange: #feb31c;
+$orange: #feca61;
+$darkblue: #2185a6;
+$blue: #4d9db8;
+$text-gray: #b8b8bb;
+$text-gray: #fdfdfd;
+$bgc-gray: #f2f2f3;
+$black: #363640;
+
+/* /COLORS */
+
+/* base styles */
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+}
+
+a,
+button {
+  transition: all 0.3s ease-in-out;
+}
+/* /base styles */
