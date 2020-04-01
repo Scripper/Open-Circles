@@ -1,0 +1,59 @@
+@import "src/assets/scss/common.scss";
+
+.nav-bar_container {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  background-color: $darkblue;
+  height: 100vh;
+  .link-list {
+    margin: 0.3rem 0 0;
+  }
+  .link-list_item {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $menu-gray;
+    position: relative;
+    transition: all 0.3s ease-out;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background-color: transparent;
+    }
+    &:hover {
+      svg {
+        fill: $white;
+      }
+      span {
+        color: $white;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      padding: 2.3rem 0 2.3rem 2.1rem;
+    }
+    span {
+      margin-left: 2.6rem;
+    }
+    svg {
+      fill: $menu-gray;
+    }
+  }
+  .link-list_item.active {
+    &::before {
+      background-color: $white;
+    }
+    svg {
+      fill: $white;
+    }
+    span {
+      color: $white;
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+@import "src/assets/scss/common.scss";
+
+.logo-component {
+  background-color: $blue;
+  padding: 3rem 0 3.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: $white;
+  .img-container {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1.9rem;
+  }
+}

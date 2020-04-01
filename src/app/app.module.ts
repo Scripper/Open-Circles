@@ -13,6 +13,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { ButtonComponent } from './common-components/button/button.component';
 import { LogoComponent } from './common-components/logo/logo.component';
 import { MainComponent } from './pages/main/main.component';
+import { SvgItemComponent } from './common-components/svg-item/svg-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MainComponent } from './pages/main/main.component';
     SideBarComponent,
     ButtonComponent,
     LogoComponent,
-    MainComponent
+    MainComponent,
+    SvgItemComponent
   ],
   imports: [
     BrowserModule,
