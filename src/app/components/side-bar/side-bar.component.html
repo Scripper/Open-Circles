@@ -1,4 +1,3 @@
-<!--TODO: разобраться с вставкой svg и через map переделать компонент-->
 <app-svg-item></app-svg-item>
 <div class="nav-bar_container">
   <div class="logo_container">
@@ -7,7 +6,7 @@
   <nav class="link-list_container">
     <ul class="link-list">
       <li class="link-list_item" [ngClass]="link.active && 'active'"  *ngFor="let link of linkList">
-        <a href="">
+        <a href="/">
           <mat-icon svgIcon="{{link.icon}}"></mat-icon>
           <span>{{link.name}}</span>
         </a>

@@ -15,6 +15,7 @@ import { LogoComponent } from './common-components/logo/logo.component';
 import { MainComponent } from './pages/main/main.component';
 import { SvgItemComponent } from './common-components/svg-item/svg-item.component';
 import {HttpClientModule} from '@angular/common/http';
+import { UsersListComponent } from './components/users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule} from '@angular/common/http';
     ButtonComponent,
     LogoComponent,
     MainComponent,
-    SvgItemComponent
+    SvgItemComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatListModule,
     MatIconModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
