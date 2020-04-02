@@ -1,0 +1,26 @@
+<header class="header-container">
+  <div class="left-composition">
+    <div class="header_button">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="user-list_info">
+      <span class="user-list_title">Users List</span>
+      <span class="user-list_amount">100 users</span>
+    </div>
+  </div>
+  <div class="middle-composition">
+     <app-search-bar></app-search-bar>
+  </div>
+  <div class="right-composition">
+    <app-button class="header-button" [values]="{class: 'btn-filter', value: 'TABLE FILTER'}"></app-button>
+    <div class="user-list_filter">
+      <select name="table-filter">
+        <option value="Dale McCormick">Dale McCormick</option>
+        <option value="Dale">Dale</option>
+        <option value="McCormick">McCormick</option>
+      </select>
+    </div>
+  </div>
+</header>

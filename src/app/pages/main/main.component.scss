@@ -1,3 +1,6 @@
 .page-container {
   display: flex;
+  .right-composition {
+    flex-grow: 1;
+  }
 }
