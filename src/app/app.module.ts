@@ -16,6 +16,7 @@ import { MainComponent } from './pages/main/main.component';
 import { SvgItemComponent } from './common-components/svg-item/svg-item.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { SearchBarComponent } from './common-components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UsersListComponent } from './components/users-list/users-list.component
     LogoComponent,
     MainComponent,
     SvgItemComponent,
-    UsersListComponent
+    UsersListComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

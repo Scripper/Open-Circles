@@ -1,0 +1,15 @@
+@import "src/assets/scss/common.scss";
+
+.btn {
+  padding: 1.1rem 1.4rem;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.btn-filter {
+  color: $btn-orange;
+  background-color: $white;
+  border: 1px solid $dark-btn-orange;
+  border-radius: 0.5rem;
+}

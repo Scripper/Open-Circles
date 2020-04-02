@@ -10,6 +10,8 @@ $bgc-gray: #f2f2f3;
 $black: #363640;
 $menu-gray: #bddbe4;
 $white: #fff;
+$btn-orange: #fec655;
+$dark-btn-orange: #c59b46;
 
 /* /COLORS */
 
@@ -26,5 +28,8 @@ body {
 a,
 button {
   transition: all 0.3s ease-in-out;
+}
+input {
+  border: none;
 }
 /* /base styles */
