@@ -25,7 +25,7 @@
       background-color: transparent;
     }
     &:hover {
-      svg {
+      .mat-icon {
         fill: $white;
       }
       span {
@@ -40,7 +40,7 @@
     span {
       margin-left: 2.6rem;
     }
-    svg {
+    .mat-icon {
       fill: $menu-gray;
     }
   }
@@ -48,7 +48,7 @@
     &::before {
       background-color: $white;
     }
-    svg {
+    .mat-icon {
       fill: $white;
     }
     span {

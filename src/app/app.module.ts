@@ -14,6 +14,7 @@ import { ButtonComponent } from './common-components/button/button.component';
 import { LogoComponent } from './common-components/logo/logo.component';
 import { MainComponent } from './pages/main/main.component';
 import { SvgItemComponent } from './common-components/svg-item/svg-item.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SvgItemComponent } from './common-components/svg-item/svg-item.componen
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
