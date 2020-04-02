@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,9 +7,7 @@ import {Component, ElementRef, OnInit} from '@angular/core';
 })
 export class SideBarComponent {
   linkList;
-  listOfLinks;
-  constructor(private el: ElementRef) {
-    this.listOfLinks = this.el.nativeElement.querySelectorAll('.link-list_item');
+  constructor() {
     this.linkList = [
       {
         icon: 'users-list',
