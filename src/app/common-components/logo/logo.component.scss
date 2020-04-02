@@ -2,11 +2,12 @@
 
 .logo-component {
   background-color: $blue;
-  padding: 3rem 0 3.2rem 1.5rem;
+  padding: 3.3rem 0 3.2rem 1.5rem;
   display: flex;
   align-items: center;
   font-size: 1.8rem;
   color: $white;
+  max-height: 10rem;
   .img-container {
     width: 3.5rem;
     height: 3.5rem;
