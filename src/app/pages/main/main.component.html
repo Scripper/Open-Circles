@@ -1,8 +1,7 @@
 <div class="page-container">
   <app-side-bar></app-side-bar>
   <div class="right-composition">
-    <app-header></app-header>
+    <app-header [searchForm]="searchForm"></app-header>
     <app-users-list [UserList]="userList"></app-users-list>
   </div>
 </div>
-<button (click)="addData()">123123123</button>

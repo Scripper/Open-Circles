@@ -16,5 +16,8 @@
     border-radius: 1rem;
     min-width: 28rem;
     width: 100%;
+    &:focus {
+      outline: none;
+    }
   }
 }

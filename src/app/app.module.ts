@@ -17,6 +17,7 @@ import { SvgItemComponent } from './common-components/svg-item/svg-item.componen
 import {HttpClientModule} from '@angular/common/http';
 import { UsersListComponent } from './components/users-list/users-list.component';
 import { SearchBarComponent } from './common-components/search-bar/search-bar.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SearchBarComponent } from './common-components/search-bar/search-bar.co
     MatIconModule,
     MatToolbarModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
