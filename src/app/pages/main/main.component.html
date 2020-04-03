@@ -1,7 +1,7 @@
 <div class="page-container">
   <app-side-bar></app-side-bar>
   <div class="right-composition">
-    <app-header [searchForm]="searchForm"></app-header>
+    <app-header [searchForm]="searchForm" [totalUserAmount]="userList.length"></app-header>
     <app-users-list [UserList]="userList"></app-users-list>
   </div>
 </div>
