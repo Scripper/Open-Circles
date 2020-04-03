@@ -1,0 +1,28 @@
+<p *ngIf="!UserList.length" class="nothing-found">Nothing found</p>
+<div class="table-container" *ngIf="UserList.length">
+  <table class="user-list_table">
+    <thead>
+      <tr>
+        <th>E-mail</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Company</th>
+        <th>Country</th>
+        <th>Subscription</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of UserList | slice:0:displayAmount">
+      <td>{{user.email}}</td>
+      <td>{{user.firstName}}<span>{{user.lastName}}</span></td>
+      <td><span>{{user.type}}</span></td>
+      <td><span>{{user.company}}</span></td>
+      <td><span>{{user.country}}</span></td>
+      <td>{{user.subscriptionDate}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="btn-container" *ngIf="UserList.length >= displayAmount">
+    <app-button (click)="showMoreUsers()" [values]="{class: 'btn btn-show-more', value: 'show more'}"></app-button>
+  </div>
+</div>

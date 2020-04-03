@@ -1,0 +1,49 @@
+@import "src/assets/scss/common.scss";
+
+.table-container {
+  padding: 2.7rem 2.5rem 1rem 2.5rem;
+}
+.nothing-found {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.btn-container {
+  margin: 1rem 0 0;
+}
+.user-list_table {
+  width: 100%;
+  border: 1px solid #e3e3e9;
+  border-collapse: collapse;
+  thead {
+    background-color: $white;
+    color: $darkorange;
+    th {
+      padding: 1.6rem 1rem 1.7rem 2.1rem;
+      font-weight: normal;
+      text-align: left;
+      border: 1px solid #e3e3e9;
+    }
+  }
+  tbody {
+    font-size: 1.6rem;
+    td {
+      padding: 1.6rem 0 1.7rem 2.1rem;
+      font-weight: normal;
+      text-align: left;
+      font-weight: 600;
+      padding: 3.3rem 1.5rem 3rem 2rem;
+      border: 1px solid #e3e3e9;
+      span {
+        font-weight: 300;
+      }
+    }
+    tr {
+      background-color: #fcfcfc;
+      &:nth-child(2n) {
+        background-color: $white;
+      }
+    }
+  }
+}
