@@ -3,6 +3,7 @@
 .btn {
   padding: 1.1rem 1.4rem;
   border: none;
+  cursor: pointer;
   &:focus {
     outline: none;
   }
@@ -20,4 +21,20 @@
   border: 1px solid #e3e3e9;
   background-color: $white;
   padding: 2.2rem 0;
+}
+.btn-gray {
+  color: $white;
+  background-color: #c8c8c8;
+  border: 1px solid #838383;
+  text-transform: uppercase;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+}
+.btn-green {
+  color: $white;
+  background-color: #68c67c;
+  border: 1px solid #61a970;
+  text-transform: uppercase;
+  padding: 1.2rem 3.5rem;
+  border-radius: 0.5rem;
 }

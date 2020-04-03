@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { UsersListComponent } from './components/users-list/users-list.component';
 import { SearchBarComponent } from './common-components/search-bar/search-bar.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     MainComponent,
     SvgItemComponent,
     UsersListComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
