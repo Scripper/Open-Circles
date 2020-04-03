@@ -12,11 +12,12 @@ export class MainComponent implements OnInit {
   constructor(private mockData: MockUsersService) { }
 
   ngOnInit(): void {
-    this.userList = this.mockData.getData();
-    console.log(this.userList);
-    // this.userList.subscribe(() => {
-    //   console.log(this.userList);
-    // });
-    this.mockData.fitlerData('');
+    this.mockData.dataToSend.subscribe( (data) => {
+      this.userList = data;
+    });
+    this.mockData.mockGenerator();
+  }
+  addData() {
+    this.mockData.addItem();
   }
 }
