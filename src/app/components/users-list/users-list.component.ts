@@ -17,4 +17,5 @@ export class UsersListComponent implements OnInit {
   showMoreUsers() {
     this.displayAmount = this.displayAmount + 10;
   }
+
 }

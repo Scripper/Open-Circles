@@ -1,0 +1,66 @@
+<div class="modal-main-container">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="user-info">
+        <div class="user-name">123</div>
+        <div class="user-id">unique ID - 123</div>
+      </div>
+      <div class="btn-close" (click)="onNoClick()"></div>
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <div class="modal-container w50">
+          <label For="modalEmail">E-mail</label>
+          <Input class="input-modal" id="modalEmail" placeholder="Email" type="email">
+        </div>
+        <div class="modal-container w25">
+          <label for="modalName">First name</label>
+          <Input class="input-modal" id="modalName" placeholder="First Name" type="text">
+        </div>
+        <div class="modal-container w25">
+          <label for="modalLastName">Last name</label>
+          <Input class="input-modal" id="modalLastName" placeholder="Last name" type="text">
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-container w50">
+          <label for="modalCountry">Country</label>
+          <Input class="input-modal" id="modalCountry" placeholder="Country" type="text">
+        </div>
+        <div class="modal-container w50">
+          <label for="modalCompany">Company</label>
+          <Input class="input-modal" id="modalCompany" placeholder="Company" type="text">
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-container w25">
+          <label for="modalType">Type</label>
+          <Input class="input-modal" id="modalType" placeholder="Type" type="text">
+        </div>
+        <div class="modal-container w25">
+          <label for="modalLevel">Level</label>
+          <Input class="input-modal" id="modalLevel" placeholder="Level" type="number">
+        </div>
+        <div class="modal-container w25">
+          <label for="modalValidated">Validated</label>
+          <Input class="input-modal" id="modalValidated" placeholder="yes/no" type="date">
+        </div>
+        <div class="modal-container w25">
+          <label for="modalCoins">Coins</label>
+          <Input class="input-modal" id="modalCoins" placeholder="Coins" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="modal-container footer-info">
+        <div>Subscription type - <span>123123</span></div>
+        <div>Subscription date - <span>1233</span></div>
+      </div>
+      <div class="footer-buttons" mat-dialog-actions>
+        <app-button class="mr" [values]="{class: 'btn-gray', value: 'reset password'}"></app-button>
+        <app-button class="mr" [values]="{class: 'btn-gray', value: 'revoke access'}"></app-button>
+        <app-button [values]="{class: 'btn-green', value: 'save'}"></app-button>
+      </div>
+    </div>
+  </div>
+</div>

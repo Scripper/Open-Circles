@@ -19,6 +19,7 @@ import { UsersListComponent } from './components/users-list/users-list.component
 import { SearchBarComponent } from './common-components/search-bar/search-bar.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ModalComponent } from './components/modal/modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ModalComponent } from './components/modal/modal.component';
     MatToolbarModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -34,3 +34,8 @@ input {
   border: none;
 }
 /* /base styles */
+
+/* material fixes */
+.mat-dialog-container {
+  padding: 0 !important;
+}
