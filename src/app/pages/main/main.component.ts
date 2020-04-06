@@ -37,7 +37,7 @@ export class MainComponent implements OnInit {
       width: '820px',
       height: '540px',
     });
-
+    dialogRef.componentInstance.userData = this.userList[1];
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });

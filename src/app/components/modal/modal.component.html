@@ -1,4 +1,4 @@
-<div class="modal-main-container">
+<div class="modal-main-container" [formGroup]="userInModal">
   <div class="modal">
     <div class="modal-header">
       <div class="user-info">
@@ -11,43 +11,43 @@
       <div class="container">
         <div class="modal-container w50">
           <label For="modalEmail">E-mail</label>
-          <Input class="input-modal" id="modalEmail" placeholder="Email" type="email">
+          <Input class="input-modal" id="modalEmail" placeholder="Email" type="email" formControlName="email" name="email">
         </div>
         <div class="modal-container w25">
           <label for="modalName">First name</label>
-          <Input class="input-modal" id="modalName" placeholder="First Name" type="text">
+          <Input class="input-modal" id="modalName" placeholder="First Name" type="text" formControlName="firstName">
         </div>
         <div class="modal-container w25">
           <label for="modalLastName">Last name</label>
-          <Input class="input-modal" id="modalLastName" placeholder="Last name" type="text">
+          <Input class="input-modal" id="modalLastName" placeholder="Last name" type="text" formControlName="lastName">
         </div>
       </div>
       <div class="container">
         <div class="modal-container w50">
           <label for="modalCountry">Country</label>
-          <Input class="input-modal" id="modalCountry" placeholder="Country" type="text">
+          <Input class="input-modal" id="modalCountry" placeholder="Country" type="text" formControlName="country">
         </div>
         <div class="modal-container w50">
           <label for="modalCompany">Company</label>
-          <Input class="input-modal" id="modalCompany" placeholder="Company" type="text">
+          <Input class="input-modal" id="modalCompany" placeholder="Company" type="text" formControlName="company">
         </div>
       </div>
       <div class="container">
         <div class="modal-container w25">
-          <label for="modalType">Type</label>
-          <Input class="input-modal" id="modalType" placeholder="Type" type="text">
+          <label for="type">Type</label>
+          <Input class="input-modal" id="type" placeholder="Type" type="text" formControlName="type">
         </div>
         <div class="modal-container w25">
-          <label for="modalLevel">Level</label>
-          <Input class="input-modal" id="modalLevel" placeholder="Level" type="number">
+          <label for="level">Level</label>
+          <Input class="input-modal" id="level" placeholder="Level" type="number" formControlName="level">
         </div>
         <div class="modal-container w25">
-          <label for="modalValidated">Validated</label>
-          <Input class="input-modal" id="modalValidated" placeholder="yes/no" type="date">
+          <label for="validated">Validated</label>
+          <Input class="input-modal" id="validated" placeholder="yes/no" type="date" formControlName="validated">
         </div>
         <div class="modal-container w25">
-          <label for="modalCoins">Coins</label>
-          <Input class="input-modal" id="modalCoins" placeholder="Coins" type="text">
+          <label for="coins">Coins</label>
+          <Input class="input-modal" id="coins" placeholder="Coins" type="text" formControlName="coins">
         </div>
       </div>
     </div>
